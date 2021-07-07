@@ -25,7 +25,10 @@ it("should say hello", function() {
 // 4. Finally see if you would like to refactor your code at all.
 // This is called "Red-Green-Refactor"
 // ========================================================
-
+it("Should return area", function() {
+  const area = utils.area()
+  expect(area).to.be.a("float")
+})
 
 
 
