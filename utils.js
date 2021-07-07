@@ -7,15 +7,18 @@ const sayHello = () => {
 }
 
 const area = (w, h) => {
-  return w * h
+  solution = w * h
+  return solution
 }
 
 const perimeter = (w, h) => {
-  return w + h
+  solution = 2 * (w * h)
+  return solution
 }
 
 const circleArea = r => {
-  return r^2 * PI
+  solution = r^2 * Math.PI
+  return solution
 }
 
 // ========================================================

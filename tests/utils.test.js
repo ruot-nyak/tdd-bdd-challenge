@@ -25,9 +25,25 @@ it("should say hello", function() {
 // 4. Finally see if you would like to refactor your code at all.
 // This is called "Red-Green-Refactor"
 // ========================================================
-it("Should return area", function() {
-  const area = utils.area()
-  expect(area).to.be.a("float")
+it("Should return the area", function() {
+  const areaFunction = utils.area(4, 5)
+  expect(areaFunction).to.be.a("Number")
+  expect(areaFunction).to.equal(4 * 5)
+  expect(areaFunction).to.be.above(0)
+})
+
+it("Should return the perimeter", function() {
+  const perimeterFunction = utils.perimeter(8, 9)
+  expect(perimeterFunction).to.be.a("Number")
+  expect(perimeterFunction).to.equal(2 * (8 * 9))
+  expect(perimeterFunction).to.be.above(0)
+})
+
+it("Should return the area of a circle", function() {
+  const circleAreaFunction = utils.circleArea(4)
+  expect(circleAreaFunction).to.be.a("Number")
+  expect(circleAreaFunction).to.equal(4^2 * Math.PI)
+  expect(circleAreaFunction).to.be.above(0)
 })
 
 
